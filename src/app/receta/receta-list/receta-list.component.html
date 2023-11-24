@@ -1,12 +1,15 @@
-<div class="container-fluid">
+<div class="container">
   <div *ngIf="selected">
     <app-receta-detail [recetaDetail]="selectedReceta"></app-receta-detail>
   </div>
+  <hr>
   <p>** La calificación promedio es de {{getPromedio()}}{{promedio}} con un total de {{total}} opiniones **</p>
   <div class="row">
       <div *ngFor="let r of recetas" class="col mb-2">
           <div class="card" style="width: 22rem; height: 30rem">
+            <br>
             <h5 class="card-title">{{ r.nombre }}</h5>
+            <br>
             <img
               class="card-img-top"
               src="{{ r.imagen }}"
