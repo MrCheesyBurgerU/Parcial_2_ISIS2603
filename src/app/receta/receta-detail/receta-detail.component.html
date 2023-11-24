@@ -1,0 +1,26 @@
+
+  <dl>
+    <div class="row">
+      <div class="col-4">
+        <h5>{{recetaDetail.nombre}}</h5>
+      <img
+      class="card-img-top"
+      src="{{ recetaDetail.imagen }}"
+      alt="{{ recetaDetail.nombre }}"
+      />
+      <p>Estrellas: {{recetaDetail.estrellas}} || Cantidad Opiniones: {{recetaDetail.cantidadOpiniones}}</p>
+      </div>
+      <div class="col-6" style="vertical-align: middle;">
+        <br>
+        <br>
+        <h6>Descripcion:</h6>
+        <p>{{recetaDetail.descripcion}}</p>
+        <h6>Ingredientes:</h6>
+        <p>{{recetaDetail.ingredientes}}</p>
+        <h6>Autor de la Receta:</h6>
+        <p>{{recetaDetail.autorReceta}}</p>
+        <h6>Más Info:</h6>
+        <p>Dificultad: {{recetaDetail.dificultad}} || Duracion {{recetaDetail.duracion}}</p>
+      </div>
+    </div>
+  </dl>
